@@ -49,20 +49,21 @@ function Layout() {
             </nav>
 
             {mobile&&<div className="mobile-nav-bar">
-                    <Link to="/home" className="nav-item-top">Home</Link>
-                    <Link to="/hikes" className="nav-item-top">Hikes</Link>
-                    <Link to="/about" className="nav-item-top">About</Link>
-                    <Link to="/contact" className="nav-item-top">Contact</Link>
-                    {topNavName == "User" && <Link to="/" className="nav-item-top">Login</Link>}
-                    <Link to="/mycalender" className="nav-item-top-cart-calender-icons"><CalendarMonthSharpIcon /></Link>
-                    <Link to="/cart" className="nav-item-top-cart-calender-icons"><AddShoppingCartSharpIcon /></Link>
+                    <Link to="/home" className="nav-item-top" onClick={()=>setmobile(!mobile)}>Home</Link>
+                    <Link to="/hikes" className="nav-item-top" onClick={()=>setmobile(!mobile)}>Hikes</Link>
+                    <Link to="/about" className="nav-item-top" onClick={()=>setmobile(!mobile)}>About</Link>
+                    <Link to="/contact" className="nav-item-top" onClick={()=>setmobile(!mobile)}>Contact</Link>
+                    {topNavName == "User" && <Link to="/" className="nav-item-top" onClick={()=>setmobile(!mobile)}>Login</Link>}
+                    <Link to="/mycalender" className="nav-item-top-cart-calender-icons" onClick={()=>setmobile(!mobile)}><CalendarMonthSharpIcon /></Link>
+                    <Link to="/cart" className="nav-item-top-cart-calender-icons" onClick={()=>setmobile(!mobile)}><AddShoppingCartSharpIcon /></Link>
                     <div id="user-welcome">{`${topNavName}`}</div>
-                    <button id="sign-out-btn" onClick={() => {
+                    <button id="sign-out-btn"  onClick={() => {
                         setTopNavName('User')
                         localStorage.setItem('loginName', 'User')
                         setCart([])
                         setEvents([])
-                    }}>Sign out</button>
+                        setmobile(!mobile)
+                    }} >Sign out</button>
 
                     
 

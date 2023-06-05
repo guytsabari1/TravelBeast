@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Context } from '../../context/context';
 import { useContext} from "react";
 
+
 function MyCalendar() {
   const {events,setEvents,topNavName } = useContext(Context);
 
@@ -81,7 +82,6 @@ function MyCalendar() {
             align-items: center;
             height: 100%;
           }
-
           .event-title {
             text-align: center;
           }
