@@ -1,7 +1,7 @@
 import MainPic from "../../images/MainPic.webp";
 import '../Home/Home.css'
 import { Context } from '../../context/context';
-import { React, useContext } from "react";
+import { React, useContext, useState } from "react";
 
 
 
@@ -23,11 +23,9 @@ function Home() {
                         Introducing TravelBeast,
                         your personal hiking guide.
                         Our platform uses advanced algorithms
-                        and a vast trail database to find your
-
-                        perfect hike.
-                        Simply input your hike
-                        preferences and TravelBeast will do the rest for you.
+                        and a vast trail database to find the
+                        best hike for you.
+                    
 
                         <br></br><br></br>So, What are you waiting for? Lace up your boots and let TravelBeast guide
                         you to your next great outdoor experience.</h1>

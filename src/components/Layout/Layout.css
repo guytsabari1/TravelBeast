@@ -307,6 +307,7 @@ a {
 
 #bot-nav-leftpart{
   display: flex;
+ 
 }
 /* .card{
   position: absolute;
@@ -324,7 +325,9 @@ a {
 
   .mobile-nav-bar{
     
-    top: 17vh;
+    top: 17.5vh;
+    width: 100%;
+  
    
   }
   
@@ -350,18 +353,17 @@ a {
 
   #fast-links {
     flex-basis: 50%;
-    justify-content: center;
-    margin-right: 5vw;
-    margin-left: 5vw
+    justify-content: space-between;
+    margin-right: 10vw;
+    margin-left: 5vw;
   }
 
   #follow-us {
-    flex-basis: 50%;
-    justify-content: center;
-    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
   }
 
-  #fast-links a,
+
   #follow-us a {
     margin: 10px 0;
   }
@@ -395,6 +397,10 @@ a {
     display: flex;
     flex-direction: column;
     scale: 0.7;
+  }
+
+  .nav-item-bot{
+    margin: 13px 0;
   }
   
   

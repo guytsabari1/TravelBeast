@@ -84,9 +84,10 @@ function Layout() {
 
                 <div id="follow-us">
                     <p>Follow us</p>
-                    <a href="https://he-il.facebook.com/" target="_blank" className="nav-item-bot">Facebook</a>
                     <a href="https://www.instagram.com/" target="_blank" className="nav-item-bot">Instagram</a>
                     <a href="https://twitter.com/" target="_blank" className="nav-item-bot">Twitter</a>
+                    <a href="https://www.linkedin.com/" target="_blank" className="nav-item-bot">Linkdin</a>
+                    <a href="https://www.whatsapp.com/" target="_blank" className="nav-item-bot">Whatsapp</a>
                 </div>
 
 
