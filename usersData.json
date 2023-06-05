@@ -1,0 +1,28 @@
+{
+    "userResults": [
+      {
+        "username": "Alex",
+        "password": 12345678
+      },
+      {
+        "username": "Dave",
+        "password": 87654321
+      },
+      {
+        "username": "Jack",
+        "password": 23456789
+      },
+      {
+        "username": "Emma",
+        "password": 98765432
+      },
+      {
+        "username": "Eva",
+        "password": 34567890
+      },
+      {
+        "username": "Daniel",
+        "password": 56789012
+      }
+    ]
+  }

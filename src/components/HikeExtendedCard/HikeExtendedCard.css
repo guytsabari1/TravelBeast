@@ -1,0 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #container-hike {
+    display: flex;
+    column-gap: 70px;
+    justify-content: center;
+    height: 800px;
+
+ 
+  
+  }
+  
+  #img-itself {
+    height: 500px;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+  }
+  
+  #info-title {
+    font-size: 50px;
+    color: white;
+  }
+  
+  .info-list-item {
+    align-items: center;
+    color: white;
+    font-size: 1.6vw;
+  }
+
+  .info-list-item-icon{
+    margin-right: 10px;
+  }
+
+  #hike-info{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    row-gap: 20px;
+    margin-top: 90px;
+  }
+  
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 810px) {
+    #container-hike {
+      flex-direction: column;
+      height: auto;
+    }
+
+    #hike-img-div{
+        display: flex;
+        justify-content: center;
+    }
+
+    #hike-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10%;
+        margin: 0;
+    
+    }
+  
+    #img-itself {
+      margin: 50px;
+    }
+
+    .info-list-item {
+    
+      font-size: 3.0vw;
+    }
+  }
+
+
+
+
+  
+  @media screen and (max-width: 480px) {
+    #info-title {
+      font-size: 30px;
+    }
+  
+    #img-itself {
+      width: 100vw;
+    }
+    .info-list-item {
+      margin: 5px 0px 5px 10px;
+      
+    }
+  }
