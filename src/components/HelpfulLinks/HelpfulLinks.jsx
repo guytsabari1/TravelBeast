@@ -5,7 +5,9 @@ function HelpfulLinks() {
       <div id='help-container'>
         <div className='titles'>
       <h1 id='help-title'>Help Center</h1>
-      <h3>Got lost, stuck, or worse? Here is some information to help yourself out of a sticky situation:</h3>
+      <h3 id="help-sub-title">You got lost,stucked or faced any emergency
+       problem during your hike? Here is some fast useful emergency information
+        for you in order to get out of any problem</h3>
       </div>
     <div className='grid-container'>
  <p className='grid-item1'>State:</p><p className='grid-item2'>Ambulance:</p><p className='grid-item3'>Police:</p><p className='grid-item4'>Fire Dept:</p><p className='grid-item5'>Emergency Call Center:</p><p className='grid-item6'>Help site</p>

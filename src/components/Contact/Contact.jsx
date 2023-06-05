@@ -11,12 +11,12 @@ function Contact() {
             <h1 id="contact-us-title">CONTACT US</h1>
 
             <h4 id='contact-us-text'>
-                Remember that We are always here for you!<br />
-                If you have any questions, feedback,or you faced<br />
-                any problem,let us know and we will do the best to help you.<br />
-                You can contact us at our E-mail, Phone number or in the Social media.<br />
+                Remember that We are always here for you!
+                If you have any questions, feedback,or you faced
+                any problem,let us know and we will do the best to help you.
+                You can contact us at our E-mail, Phone number or in the Social media.
                 Follow us on Facebook, Instagram, and Twitter for hike offers at
-                affordable prices.<br/><br/>We can't wait to help you explore the world!</h4>
+                affordable prices.We can't wait to help you explore the world!</h4>
 
             <div id="details">
 

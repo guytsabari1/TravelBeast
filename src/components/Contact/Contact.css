@@ -3,14 +3,11 @@
     padding: 0;
     box-sizing: border-box;
   }
-
-  /* #contact-section{
-    height: 700px;
-  } */
   
   #contact-us-title {
-    font-size: 45px;
-    margin-top: 50px;
+    font-size: 3vw;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
   
     text-align: center;
     color: white;
@@ -18,34 +15,62 @@
 
   #contact-us-text{
     text-align: center;
-    padding: 60px 50px 100px 60px;
     color: white;
-    font-size: 28px;
+    font-size: 1.8vw;
     line-height: 1.5;
+    padding-left: 18vw ;
+    padding-right: 18vw ;
+    padding-bottom: 10vh ;
+
     
   }
   
- 
-  
   #details {
-    margin-top: auto; /* Adjusted from margin-top: 80px; */
-    margin-bottom: 0; /* Adjusted from margin-bottom: 50px; */
-    font-size: 30px;
+    margin-top: auto; 
+    margin-bottom: 0; 
+    font-size: 1.8vw;
     color: white;
     display: flex;
     justify-content: space-evenly;
     background-color: black;
-    padding: 10px;
+    padding: 2vh;
   }
   
   @media (max-width: 768px) {
+
+    #contact-us-title {
+      font-size: 8vw;
+      margin-top: 5vh;
+      margin-bottom: 2.5vh;
+    
+      text-align: center;
+      color: white;
+    }
+  
+    #contact-us-text{
+      text-align: center;
+      color: white;
+      font-size: 4vw;
+      line-height: 1.5;
+      padding-left: 18vw ;
+      padding-right: 18vw ;
+      padding-bottom: 10vh ;
+  
+      
+    }
+    
     #details {
       flex-direction: column;
       align-items: center;
-      text-align: center;
+      padding: 2vh;
     }
   
     #details span.one-detail-line {
-      margin: 10px;
+    margin-top: 0.7vh;
+    margin-bottom: 0.7vh;
+    width: 31vw;
+    align-content: start;
     }
+
+  
   }
