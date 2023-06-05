@@ -76,6 +76,18 @@ label {
   
 }
 
+
+.checkbox-container{
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox-sign-up{
+  margin: 30px 0 30px 0;
+  height: 30px;
+  width: 30px;
+}
+
 @media screen and (max-width: 768px) {
   .input {
     width: 80vw;

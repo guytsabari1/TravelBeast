@@ -6,13 +6,14 @@ import '../LoginPage/LoginPage.css';
 import '../../../usersData.json'
 
 function LoginPage() {
-  const { usersData,setTopNavName,setCart,setEvents } = useContext(Context);
+  const { usersData, setTopNavName, setCart, setEvents } = useContext(Context);
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
-  const [username,setusername] =useState()
-  const [password1,setPassword1] =useState()
-  const [password2,setPassword2] =useState()
-  
+  const [username, setusername] = useState()
+  const [password1, setPassword1] = useState()
+  const [password2, setPassword2] = useState()
+  const [checked, setChecked] = useState(false);
+
 
   const onSubmit = (userDetails) => {
 
@@ -21,22 +22,22 @@ function LoginPage() {
         localStorage.setItem("loginName", item.username);
         setTopNavName(item.username)
         const cart = localStorage.getItem(`${item.username}Favorites`)
-        setCart(JSON.parse(cart)|| [])
+        setCart(JSON.parse(cart) || [])
         const userCalendar = localStorage.getItem(`${item.username}Events`)
         setEvents(JSON.parse(userCalendar) || [])
         navigate("/home");
-    
+
         return;
       }
 
       else (
-       console.log('Invalid username or password')
+        console.log('Invalid username or password')
       )
     });
 
-  
+
   }
-     
+
   function sign() {
 
     if (username === '') {
@@ -74,22 +75,28 @@ function LoginPage() {
         </form>
       </div>
 
-
-      <div className="main">
-      <div className="login">
-        <form className="form">
-          <label>Sign Up</label>
-          <input className="input" type="text" name="username" value={username} placeholder="User Name" required onChange={e=>setusername(e.target.value)}/>
-          <input className="input" type="password" name="password" value={password1} placeholder="Password" required onChange={e=>setPassword1(e.target.value)}  />
-          <input className="input" type="password" name="password" value={password2} placeholder="Password" required onChange={e=>setPassword2(e.target.value)} />
-          <button type="submit" onClick={()=>sign()}>Sign Up</button>
-        </form>
+      <label>New Member?</label>
+      <div className='checkbox-container'>
+        <input type="checkbox" className='checkbox-sign-up' checked={checked} onClick={()=> setChecked(!checked)}/>
       </div>
-    </div>
+
+      
+
+      {checked && <div className="main">
+        <div className="login">
+          <form className="form">
+            
+            <input className="input" type="text" name="username" value={username} placeholder="User Name" required onChange={e => setusername(e.target.value)} />
+            <input className="input" type="password" name="password" value={password1} placeholder="Password" required onChange={e => setPassword1(e.target.value)} />
+            <input className="input" type="password" name="password" value={password2} placeholder="Password" required onChange={e => setPassword2(e.target.value)} />
+            <button type="submit" onClick={() => sign()}>Sign Up</button>
+          </form>
+        </div>
+      </div>}
 
     </div>
 
-    
+
   );
 }
 

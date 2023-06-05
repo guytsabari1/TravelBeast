@@ -14,6 +14,7 @@ import Layout from "./components/Layout/Layout";
 import MyCalender from './components/MyCalender/MyCalender'
 import NoMatch from './components/NoMatch/NoMatch';
 import PaymentBtn from './components/Payment/PaymentBtn';
+import HelpfulLinks from './components/HelpfulLinks/HelpfulLinks';
 
 
 
@@ -50,6 +51,7 @@ function App() {
             <Route path="/hikes" element={<Hikes />}></Route>
             <Route path="/hikes/:id" element={<HikeExtendedCard />}></Route>
             <Route path="/mycalender" element={<MyCalender />}></Route>
+            <Route path='/help' element={<HelpfulLinks/>}></Route>
             <Route path="*" element={<NoMatch/>}></Route>
           </Route>
           

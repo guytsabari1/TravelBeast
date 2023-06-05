@@ -4,6 +4,7 @@ import interactionPlugin from "@fullcalendar/interaction";
 import { useEffect, useState } from "react";
 import { Context } from '../../context/context';
 import { useContext} from "react";
+import '../MyCalender/MyCalender.css'
 
 
 function MyCalendar() {

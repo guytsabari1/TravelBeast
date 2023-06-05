@@ -49,7 +49,7 @@ function HikeCard({ value }) {
       <div className="hike-card-text"><span className="info-list-item-icon"><IoLocationSharp size={32} /></span>{`Country: ${value?.country}`}</div>
       <div className="hike-card-text"><span className="info-list-item-icon"><MdAttachMoney size={32} /></span>{`Price: ${value?.price}$`}</div>
       <div className="hike-card-text"><span className="info-list-item-icon"><MdFamilyRestroom size={32} /></span>{`For: ${value?.for}`}</div>
-      <div className="hike-card-text"><span className="info-list-item-icon"><TbCircleLetterD size={32} /></span>{`Days:${value?.numberOfDays}`}</div>
+      <div className="hike-card-text"><span className="info-list-item-icon"><TbCircleLetterD size={32} /></span>{`Days: ${value?.numberOfDays}`}</div>
 
       <button className={`add-to-cart-btn ${cardStatus ? 'remove-btn' : ''}`} onClick={addToFav}>
         {cardStatus ? 'Remove from Cart' : 'Add to Cart'}
