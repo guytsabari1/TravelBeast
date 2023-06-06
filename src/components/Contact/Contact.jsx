@@ -20,9 +20,10 @@ function Contact() {
 
             <div id="details">
 
-                <span className="one-detail-line"> <PhoneInTalkIcon />  +1-555-123-4567</span>
+                <span className="one-detail-line"> <PhoneInTalkIcon />+1-555-123-4567</span>
                 <span className="one-detail-line"> <AlternateEmailIcon /> TravelBeast@gmail.com</span>
                 <span className="one-detail-line"> <LocationOnIcon />  ISR</span>
+                
             </div>
 
         </div>
